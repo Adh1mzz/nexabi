@@ -100,7 +100,7 @@ Frontend tersedia di `http://localhost:3000`
 ```bash
 cd backend
 python -m venv .venv
-source .venv/bin/activate
+.\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 cp .env.example .env   # sesuaikan DATABASE_URL dan SECRET_KEY
 uvicorn app.main:app --host 0.0.0.0 --port 5000 --reload
